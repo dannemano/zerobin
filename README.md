@@ -1,4 +1,4 @@
-==== Get started ====
+==== Getting started ====
 
 My tweaks for this interesting Javascript crypto project.
 See original license below. Based on the work of http://sebsauvage.net/wiki/doku.php?id=php:zerobin.
