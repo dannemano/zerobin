@@ -345,7 +345,7 @@ function send_data() {
                 var deleteUrl = scriptLocation() + "?pasteid=" + data.id + '&deletetoken=' + data.deletetoken;
                 showStatus('');
 
-                $('div#pastelink').html('Your paste is <a id="pasteurl" href="' + url + '">' + url + '</a> <span id="copyhint">(Hit CTRL+C to copy)</span>');
+                $('div#pastelink').html('Your paste is <a id="pasteurl" target="_blank" href="' + url + '">' + url + '</a> <span id="copyhint">(Hit CTRL+C to copy)</span>');
                 $('div#deletelink').html('<a href="' + deleteUrl + '">Delete link</a>');
                 $('div#pasteresult').show();
                 selectText('pasteurl'); // We pre-select the link so that the user only has to CTRL+C the link.
@@ -401,7 +401,7 @@ function stateNewPaste() {
     $('div#burnafterreadingoption').show();
     //$('div#opendisc').show();
     $('div#syntaxcoloringoption').show();
-    $('button#newbutton').show();
+    //$('button#newbutton').show();
     $('div#pasteresult').hide();
     $('textarea#message').text('');
     $('textarea#message').show();
@@ -421,15 +421,15 @@ function stateExistingPaste() {
         $('button#clonebutton').hide();
     }
     else {
-        $('button#clonebutton').show();
+        //$('button#clonebutton').show();
     }
-    $('button#rawtextbutton').show();
+    //$('button#rawtextbutton').show();
 
     $('div#expiration').hide();
     $('div#burnafterreadingoption').hide();
     $('div#opendisc').hide();
     $('div#syntaxcoloringoption').hide();    
-    $('button#newbutton').show();
+    //$('button#newbutton').show();
     $('div#pasteresult').hide();
     $('textarea#message').hide();
     $('div#cleartext').show();
