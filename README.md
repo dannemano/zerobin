@@ -1,6 +1,18 @@
+==== Getting started ====
+
+My tweaks for this interesting Javascript crypto project.
+See original license below. Based on the work of http://sebsauvage.net/wiki/doku.php?id=php:zerobin.
+
+
+Install procedure.
+* Place on a PHP enabled web server. 
+* Create folders tmp and data and make them writable by web server.
+
+
+
 ZeroBin 0.18 Alpha
 
-==== THIS IS ALPHA SOFTWARE - USE AT YOUR OWN RISKS ====
+
 
 ZeroBin is a minimalist, opensource online pastebin where the server 
 has zero knowledge of pasted data. Data is encrypted/decrypted in the 
