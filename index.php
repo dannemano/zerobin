@@ -400,6 +400,8 @@ else if (!empty($_SERVER['QUERY_STRING']))  // Return an existing paste.
 
 require_once "lib/rain.tpl.class.php";
 header('Content-Type: text/html; charset=utf-8');
+header("Access-Control-Allow-Origin: *");
+header("Access-Control-Allow-Headers: X-Requested-With");
 $page = new RainTPL;
 $page->assign('CIPHERDATA',htmlspecialchars($CIPHERDATA,ENT_NOQUOTES));  // We escape it here because ENT_NOQUOTES can't be used in RainTPL templates.
 $page->assign('VERSION',$VERSION);

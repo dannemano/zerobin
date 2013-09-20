@@ -26,12 +26,10 @@
           ZeroBin is a minimalist, opensource online pastebin where the server has zero knowledge of pasted data.
           Data is encrypted/decrypted <i>in the browser</i> using 256 bits AES. 
           More information on the <a href="http://sebsauvage.net/wiki/doku.php?id=php:zerobin">project page</a>.<br />
-          <span style="text-decoration:blink;font-size:10pt;color:#a4b3c4;">&#9654;</span> Note: This is a test service: 
-          Data may be deleted anytime. Kittens will die if you abuse this service.
+          <span style="text-decoration:blink;font-size:10pt;color:#a4b3c4;">&#9654;</span> 
 </div>
     <h1 title="ZeroBin" onclick="window.location.href=scriptLocation();return false;">ZeroBin</h1><br>
     <h2>Because ignorance is bliss</h2><br>
-    <h3>{$VERSION}</h3>
     <noscript><div class="nonworking">Javascript is required for ZeroBin to work.<br>Sorry for the inconvenience.</div></noscript>
     <div id="oldienotice" class="nonworking">ZeroBin requires a modern browser to work.</div>
     <div id="ienotice">Still using Internet Explorer ? &nbsp;Do yourself a favor, switch to a modern browser: 
@@ -53,10 +51,8 @@
         <option value="10min">10 minutes</option>
         <option value="1hour">1 hour</option>
         <option value="1day">1 day</option>
-        <option value="1week">1 week</option>
-        <option value="1month" selected="selected">1 month</option>
-        <option value="1year">1 year</option>
-        <option value="never">Never</option>
+        <option value="1week" selected="selected">1 week</option>
+        <option value="1month">1 month</option>
       </select>
       </div>
       <div id="remainingtime" style="display:none;"></div>
@@ -65,12 +61,8 @@
          <label for="burnafterreading">Burn after reading</label>
       </div>
       <div id="opendisc" class="button" style="display:none;">
-         <input type="checkbox" id="opendiscussion" name="opendiscussion" />
+         <input type="checkbox" checked="true" id="opendiscussion" name="opendiscussion" />
          <label for="opendiscussion">Open discussion</label>
-      </div>
-      <div id="syntaxcoloringoption" class="button" style="display:none;">
-         <input type="checkbox" id="syntaxcoloring" name="syntaxcoloring" />
-         <label for="syntaxcoloring">Syntax coloring</label>
       </div>
     </div>
     <div id="pasteresult" style="display:none;">
@@ -78,7 +70,7 @@
       <div id="pastelink"></div>
     </div>
     <div id="cleartext" style="display:none;"></div>
-    <textarea id="message" name="message" cols="80" rows="25" style="display:none;"></textarea>
+    <textarea id="message" name="message" cols="80" rows="10" style="display:none;"></textarea>
     <div id="discussion" style="display:none;">
         <h4>Discussion</h4>
         <div id="comments"></div>
