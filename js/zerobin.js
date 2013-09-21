@@ -354,7 +354,9 @@ function send_data() {
                 urls2links($('div#cleartext'));
 
                 // FIXME: Add option to remove syntax highlighting ?
-                if ($('input#syntaxcoloring').is(':checked')) applySyntaxColoring();
+                //if ($('input#syntaxcoloring').is(':checked')) applySyntaxColoring();
+
+                window.top.postMessage(url, '*');
 
                 showStatus('');
             }
