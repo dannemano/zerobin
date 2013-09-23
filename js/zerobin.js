@@ -345,7 +345,7 @@ function send_data() {
                 var deleteUrl = scriptLocation() + "?pasteid=" + data.id + '&deletetoken=' + data.deletetoken;
                 showStatus('');
 
-                $('div#pastelink').html('Your paste is <a id="pasteurl" target="_blank" href="' + url + '">' + url + '</a> <span id="copyhint">(Hit CTRL+C to copy)</span>');
+                $('div#pastelink').html('Your encrypted anonymous URL is: <br/> <a id="pasteurl" target="_blank" href="' + url + '">' + url + '</a> <br/><span id="copyhint">(Hit CTRL+C to copy)</span>');
                 $('div#deletelink').html('<a href="' + deleteUrl + '">Delete link</a>');
                 $('div#pasteresult').show();
                 selectText('pasteurl'); // We pre-select the link so that the user only has to CTRL+C the link.
